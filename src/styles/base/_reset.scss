@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: $main-color;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
