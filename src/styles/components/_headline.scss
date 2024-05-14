@@ -1,0 +1,25 @@
+@mixin headline-styles(
+  $font-weight,
+  $font-size: 42px,
+  $line-height,
+  $color: $primary-color
+) {
+  font-weight: $font-weight;
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin info-styles( $font-weight:400, $color:#000,$font-size:20px, $line-height:40px) {
+  font-weight: $font-weight;
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+
+@mixin top-headline-styles($color:$secondary-color){
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: $color;
+}

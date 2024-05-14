@@ -1,0 +1,37 @@
+@mixin button-styles(
+  $padding-x,
+  $padding-y,
+  $color,
+  $font-weight,
+  $font-size,
+  $border-radius,
+  $bg-color
+) {
+  padding: $padding-x $padding-y;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+}
+
+@mixin tick-icon-styles(
+  $icon-size: 12px,
+  $icon-color: #fff,
+  $background-color: #4f46ba,
+  $icon-width: 20px,
+  $icon-height: 20px
+) {
+  i {
+    font-size: $icon-size;
+    color: $icon-color;
+  }
+
+  border-radius: 50%;
+  background-color: $background-color;
+  width: $icon-width;
+  height: $icon-height;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}

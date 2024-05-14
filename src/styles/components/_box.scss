@@ -1,0 +1,22 @@
+@mixin box-styles(
+  $border-color: #dbe4e9,
+  $border-radius: 20px,
+  $text-align: center
+) {
+  background-color: #fff;
+  border: 1px solid $border-color;
+  padding: 2rem;
+  border-radius: $border-radius;
+  h4{
+      text-align: $text-align;
+      line-height: 34px;
+      font-size: 30px;
+      font-weight: 700;
+  }
+  h5 {
+    text-align: $text-align;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
