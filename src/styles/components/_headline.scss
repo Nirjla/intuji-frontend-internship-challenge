@@ -8,16 +8,40 @@
   color: $color;
   font-size: $font-size;
   line-height: $line-height;
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+    line-height: 45px;
+
+  }
 }
-@mixin info-styles( $font-weight:400, $color:#000,$font-size:20px, $line-height:40px) {
+@mixin info-styles(
+  $font-weight: 400,
+  $color: #000,
+  $font-size: 20px,
+  $line-height: 40px
+) {
   font-weight: $font-weight;
   color: $color;
   font-size: $font-size;
   line-height: $line-height;
+  @media (max-width: 768px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+    line-height: 25px;
+
+  }
 }
 
-
-@mixin top-headline-styles($color:$secondary-color){
+@mixin top-headline-styles($color: $secondary-color) {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;

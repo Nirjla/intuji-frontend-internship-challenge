@@ -16,6 +16,39 @@
 @import "themes/theme";
 @import "utilities/swiper";
 
+.mobile-display-hidden {
+  @media (min-width: 576px) and (max-width: 768px) {
+    display: none; // Hide the element on screens smaller than 576px
+  }
+}
+.mobile-display-column-reverse {
+  @media (min-width: 576px) and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
+.mobile-display-flex {
+  @media (min-width: 576px) and (max-width: 768px) {
+    display: flex;
+    gap: 18px;
+    .secondary-feature {
+      padding-right: 12px;
+    }
+  }
+}
+// mobile view navbar
+.mobile-navbar {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-navbar {
+    display: block;
+  }
+  .mobile-view-content {
+    ul {
+      display: inline-block;
+    }
+  }
+}
 .logo {
   font-weight: 700;
   font-size: 20px;
@@ -77,6 +110,15 @@ nav a {
     $font-size: 14px,
     $line-height: 26px
   );
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    line-height: 25px;
+  }
 }
 
 .video-icon {
@@ -95,6 +137,24 @@ nav a {
 
 .main-img {
   margin-bottom: -28px;
+}
+.particle-1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  img {
+    height: 130px;
+  }
+}
+.particle-2 {
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+.particle-3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .tick-icon {
@@ -154,7 +214,8 @@ nav a {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 500px;
+  width: 100%;
+  height: 550px;
   position: relative;
 }
 .top-headline {
@@ -215,26 +276,36 @@ nav a {
 }
 
 .why-2 {
-  right: -82px;
-  margin-top: 30px;
   top: 89px;
+  padding-left: -16px;
+  margin-left: 87px;
+  left: 93px;
+  margin-top: 77px;
 }
 .why-3 {
-  right: -64px;
-  margin-top: 30px;
-  top: 212px;
+  left: 89px;
+  margin-top: 43px;
+  top: 233px;
+  margin-left: 72px;
 }
 .why-4 {
-  top: 330px;
-  margin-top: 30px;
+  top: 328px;
+  margin-top: 64px;
 }
-.whychoose-img-1 {
+@media (min-width: 1200px) {
+  .why-2 {
+    margin-left: 26px;
+    left: 93px;
+  }
+  .why-3 {
+    margin-left: 24px;
+    left: 89px;
+  }
+}
+
+.whychoose-feature {
   position: absolute;
   top: 0;
-  height: 100%;
-  img {
-    height: 100%;
-  }
 }
 .whychoose-img-2 {
   position: absolute;
@@ -258,6 +329,10 @@ nav a {
   background-color: #fff;
   bottom: 69px;
   left: -57px;
+  @media (min-width: 768px) {
+    right: 24px;
+    left: unset;
+  }
 }
 .graph-box {
   position: absolute;
@@ -279,14 +354,6 @@ nav a {
     background-color: #3d3d3d;
   }
 }
-.reviews {
-  p {
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 31px;
-    color: #fff;
-  }
-}
 .review-box {
   h2 {
     font-size: 72px;
@@ -300,6 +367,34 @@ nav a {
     i {
       color: #b1ca16;
       margin-right: 12px;
+    }
+  }
+}
+
+.reviews {
+  p {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 50px;
+      line-height: 30px;
+      padding-bottom: 24px;
+    }
+    span {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 48px;
+      line-height: 25px;
+      padding-bottom: 22px;
     }
   }
 }
@@ -329,16 +424,30 @@ nav a {
     line-height: 36px;
     padding-bottom: 24px;
     margin-bottom: 24px;
+    padding: 12px;
   }
-  p:nth-child(2){
+  p:nth-child(2) {
     font-weight: 600;
     font-size: 16px;
-
   }
-  img{
+  img {
     height: 400px;
     width: 100%;
     object-fit: contain;
+  }
+  @media (min-width: 768px) {
+    img {
+      height: 200px;
+    }
+    p:nth-child(1) {
+      font-size: 16px;
+      line-height: 25px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+    p:nth-child(2) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -403,6 +512,19 @@ footer {
     opacity: 50%;
     padding-top: 1rem;
   }
+  .copyright {
+    border-top: 2px solid #e5e5ea;
+  }
+  .social-media {
+    margin-top: 18px;
+    a {
+      color: #3734a9;
+      margin-right: 12px;
+      i {
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 // accordion styles
@@ -450,4 +572,17 @@ footer {
   line-height: 31px;
   font-weight: 400;
   padding: 0 22px;
+}
+
+// tags
+span {
+  @media (max-width: 768px) {
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+    line-height: 40px;
+  }
 }

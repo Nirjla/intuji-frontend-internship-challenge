@@ -7,11 +7,27 @@
   border: 1px solid $border-color;
   padding: 2rem;
   border-radius: $border-radius;
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 12px;
+
+  }
   h4{
       text-align: $text-align;
       line-height: 34px;
       font-size: 30px;
       font-weight: 700;
+        @media (max-width: 768px) {
+          font-size: 24px;
+        }
+      
+        @media (max-width: 576px) {
+          font-size: 18px;
+      
+        }
   }
   h5 {
     text-align: $text-align;

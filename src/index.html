@@ -17,19 +17,28 @@
   </head>
   <body>
     <main>
-      <div class="theme">
+      <div class="theme position-relative">
+        <div class="particle-1">
+          <img src="./assets/images/particle-1.png" alt="">
+        </div>
+        <div class="particle-2">
+          <img src="./assets/images/particle-2.png" alt="">
+        </div>
+        <div class="particle-3">
+          <img src="./assets/images/particle-3.png" alt="">
+        </div>
         <div class="container">
           <div class="home">
             <!-- navbar -->
             <header class="header-container">
               <nav>
                 <div
-                  class="d-flex align-items-center justify-content-between pt-2 pb-2"
+                  class="d-flex align-items-center justify-content-between pt-2 pb-2 position-relative"
                 >
                   <div class="logo">
                     <h1>AR SHAKIR</h1>
                   </div>
-                  <div class="">
+                  <div class="mobile-display-hidden">
                     <ul class="d-flex g-4">
                       <li>
                         <a href="">Product</a>
@@ -45,7 +54,28 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="d-flex">
+                  <!-- <div class="hamburger ">
+                    <a href="javascript:void(0);" onclick="toggleNavbar()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div> -->
+                  <div class="mobile-navbar position-absolute">
+                    <ul class="d-flex g-4 mobile-view-content">
+                      <li>
+                        <a href="">Product</a>
+                      </li>
+                      <li>
+                        <a href="">Template</a>
+                      </li>
+                      <li>
+                        <a href="">Log</a>
+                      </li>
+                      <li>
+                        <a href="">Pricing</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="d-flex mobile-display-hidden">
                     <div class="simple-button"><a href="">Sign in</a></div>
                     <div class="primary-button">
                       <a href="" class="">Start Free</a>
@@ -55,13 +85,13 @@
               </nav>
             </header>
             <!--  -->
-            <div class="home-container">
+            <div class="home-container pt-md-4 pb-md-4 pt-xl-0 pb-xl-0">
               <div class="row align-items-center">
                 <div class="col-lg-8 col-xl-8">
                   <h2 class="primary-headline">
                     Managing freelance payments has never been easier
                   </h2>
-                  <p class="primary-info pt-xl-3 pb-xl-5">
+                  <p class="primary-info pt-xl-3 pb-xl-5 pt-md-3 pb-md-3">
                     Yet bed any for travelling assistance indulgence unpleasing.
                     Not thoughts all exercise blessing.
                   </p>
@@ -77,7 +107,7 @@
                       <span>See How It Works</span>
                     </div>
                   </div>
-                  <div class="d-flex g-4 pt-lg-5 pb-lg-5">
+                  <div class="d-flex g-4 pt-lg-5 pb-lg-5 pt-md-4 pb-md-4">
                     <div>
                       <span class="tick-icon">
                         <i class="fa-solid fa-check"></i>
@@ -95,7 +125,7 @@
 
                 <div class="col-lg-4 col-xl-4">
                   <div class="overflow-hidden">
-                    <div class="main-img">
+                    <div class="main-img mobile-display-hidden">
                       <img src="assets/images/main.png" alt="" />
                     </div>
                   </div>
@@ -105,9 +135,56 @@
           </div>
         </div>
       </div>
+      <!--  -->
+      <section class="pt-xl-5 pb-xl-5 pt-md-5 pb-md-5 theme4">
+        <div class="container">
+          <div class="row">
+            <p
+              class="col text-center align-items-center justify-content-center pb-xl-5 pb-md-5"
+            >
+              Over 32k+ software businesses growing with AR Shakir.
+            </p>
+
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/morpheus.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/Openzepplin.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/oracle.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/protonet.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/segment.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="">
+                    <img src="./assets/images/Openzepplin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Automated tracking -->
       <div class="container">
-        <section class="pt-xl-5 pb-xl-5">
+        <section class="pt-xl-5 pb-xl-5 pt-md-5">
           <div class="row">
             <div class="col col-xl-6">
               <h2 class="secondary-headline">Automated portfolio tracking</h2>
@@ -136,17 +213,19 @@
           </div>
         </section>
         <!-- features -->
-        <section class="pb-xl-5">
+        <section class="pb-xl-5 pt-md-5 pb-md-5">
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="primary-feature">
                   <span class="feature-number">01</span>
-                  <div class="text-center feature-img">
+                  <div class="text-center feature-img mt-md-3">
                     <img src="./assets/images/feature1.png" alt="" />
                   </div>
                   <div>
-                    <h4 class="pt-xl-3 pb-xl-3">Connect wallets & companies</h4>
+                    <h4 class="pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+                      Connect wallets & companies
+                    </h4>
                     <p class="simple-info text-center">
                       Indulgence way everything joy alteration boisterous the
                       attachment. Party we years to order allow asked of.
@@ -157,11 +236,13 @@
               <div class="swiper-slide">
                 <div class="primary-feature">
                   <span class="feature-number">01</span>
-                  <div class="text-center feature-img">
+                  <div class="text-center feature-img mt-md-3">
                     <img src="./assets/images/feature1.png" alt="" />
                   </div>
                   <div>
-                    <h4 class="pt-xl-3 pb-xl-3">Connect wallets & companies</h4>
+                    <h4 class="pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+                      Connect wallets & companies
+                    </h4>
                     <p class="simple-info text-center">
                       Indulgence way everything joy alteration boisterous the
                       attachment. Party we years to order allow asked of.
@@ -172,11 +253,13 @@
               <div class="swiper-slide">
                 <div class="primary-feature">
                   <span class="feature-number">01</span>
-                  <div class="text-center feature-img">
+                  <div class="text-center feature-img mt-md-3">
                     <img src="./assets/images/feature1.png" alt="" />
                   </div>
                   <div>
-                    <h4 class="pt-xl-3 pb-xl-3">Connect wallets & companies</h4>
+                    <h4 class="pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+                      Connect wallets & companies
+                    </h4>
                     <p class="simple-info text-center">
                       Indulgence way everything joy alteration boisterous the
                       attachment. Party we years to order allow asked of.
@@ -187,11 +270,13 @@
               <div class="swiper-slide">
                 <div class="primary-feature">
                   <span class="feature-number">01</span>
-                  <div class="text-center feature-img">
+                  <div class="text-center feature-img mt-md-3">
                     <img src="./assets/images/feature1.png" alt="" />
                   </div>
                   <div>
-                    <h4 class="pt-xl-3 pb-xl-3">Connect wallets & companies</h4>
+                    <h4 class="pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+                      Connect wallets & companies
+                    </h4>
                     <p class="simple-info text-center">
                       Indulgence way everything joy alteration boisterous the
                       attachment. Party we years to order allow asked of.
@@ -202,61 +287,61 @@
             </div>
           </div>
         </section>
-
-        <section class="pb-xl-5">
+        <!-- why choose -->
+        <section class="pb-xl-5 pb-md-4 pt-md54">
           <div class="row">
-            <div class="col col-xl-6">
-              <div class="h-100 position-relative">
-                <div class="whychoose-img-1">
-                  <img src="./assets/images/why_choose.png" alt="" />
-                </div>
-                <div class="p-5">
-                  <div class="whychoose-wrapper position-relative">
-                    <div class="why-1 d-flex">
-                      <div class="">
-                        <img src="./assets/images/why1.png" alt="" />
+            <div class="col col-xl-6 col-md-12">
+              <div class="position-relative">
+                <div class="why-bg">
+                  <div class="p-5 whychoose-feature">
+                    <div class="whychoose-wrapper">
+                      <div class="whychoose-wrapper why-1">
+                        <div class="d-flex">
+                          <div class="">
+                            <img src="./assets/images/why1.png" alt="" />
+                          </div>
+                          <div>
+                            <span> + $28,900</span>
+                            <p>Received from Michael V</p>
+                          </div>
+                        </div>
                       </div>
-                      <div>
-                        <span> + $28,900</span>
-                        <p>Received from Michael V</p>
+                      <div class="whychoose-wrapper position-absolute why-2">
+                        <div class="d-flex">
+                          <div>
+                            <img src="./assets/images/why1.png" alt="" />
+                          </div>
+                          <div>
+                            <span> + $28,900</span>
+                            <p>Received from Michael V</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whychoose-wrapper position-absolute why-3">
+                        <div class="d-flex">
+                          <div class="">
+                            <img src="./assets/images/why1.png" alt="" />
+                          </div>
+                          <div>
+                            <span> + $28,900</span>
+                            <p>Received from Michael V</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whychoose-wrapper why-4 position-absolute">
+                        <div class="d-flex">
+                          <div class="">
+                            <img src="./assets/images/why1.png" alt="" />
+                          </div>
+                          <div>
+                            <span> + $28,900</span>
+                            <p>Received from Michael V</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="whychoose-wrapper position-relative">
-                    <div class="d-flex why-2">
-                      <div>
-                        <img src="./assets/images/why1.png" alt="" />
-                      </div>
-                      <div>
-                        <span> + $28,900</span>
-                        <p>Received from Michael V</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="whychoose-wrapper position-relative">
-                    <div class="d-flex why-3">
-                      <div class="">
-                        <img src="./assets/images/why1.png" alt="" />
-                      </div>
-                      <div>
-                        <span> + $28,900</span>
-                        <p>Received from Michael V</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="whychoose-wrapper position-relative">
-                    <div class="d-flex why-4">
-                      <div class="">
-                        <img src="./assets/images/why1.png" alt="" />
-                      </div>
-                      <div>
-                        <span> + $28,900</span>
-                        <p>Received from Michael V</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="whychoose-wrapper d-flex p-2 why-4">
+                  <!-- <div class="whychoose-wrapper d-flex p-2 why-4">
                     <div class="">
                       <img src="./assets/images/why1.png" alt="" />
                     </div>
@@ -265,10 +350,10 @@
                       <p>Received from Michael V</p>
                     </div>
                   </div> -->
+                </div>
               </div>
             </div>
-
-            <div class="col col-xl-6">
+            <div class="col col-xl-6 col-md-12 mt-md-3">
               <div class="whychoose-content-1">
                 <span class="top-headline">WHY CHOOSE US</span>
                 <h2 class="secondary-headline">
@@ -305,9 +390,9 @@
           </div>
         </section>
 
-        <section class="pt-xl-5 pb-xl-5">
-          <div class="row">
-            <div class="col col-xl-6">
+        <section class="pt-xl-5 pb-xl-5 pb-md-5">
+          <div class="row mobile-display-column-reverse">
+            <div class="col col-xl-6 mt-md-3">
               <div class="whychoose-content-2">
                 <span class="top-headline">WHY CHOOSE US</span>
                 <h2 class="secondary-headline">
@@ -335,7 +420,7 @@
                 </div>
               </div>
             </div>
-            <div class="col col-xl-6">
+            <div class="col col-xl-6 mt-md-5">
               <div class="position-relative">
                 <div class="whychoose-img-2 position-absolute">
                   <img src="./assets/images/why_choose2.png" alt="" class="" />
@@ -361,12 +446,11 @@
           </div>
         </section>
       </div>
-
       <!-- other features -->
 
       <section class="theme2">
         <div class="container">
-          <div class="pt-xl-5 pb-xl-5">
+          <div class="pt-xl-5 pb-xl-5 pt-md-5 pb-md-5">
             <div class="row">
               <div class="col">
                 <h2 class="secondary-headline">Features that blows mind</h2>
@@ -380,7 +464,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col col-xl-4">
+              <div class="col col-xl-4 mb-md-3">
                 <div class="secondary-feature">
                   <div>
                     <img src="./assets/images/feature1.png" alt="" />
@@ -394,7 +478,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-xl-4">
+              <div class="col col-xl-4 mb-md-3">
                 <div class="secondary-feature">
                   <div>
                     <img src="./assets/images/feature1.png" alt="" />
@@ -406,8 +490,8 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-xl-4">
-                <div class="secondary-feature mb-sm-4">
+              <div class="col col-xl-4 mobile-display-flex">
+                <div class="secondary-feature mb-xl-4">
                   <h5>Merits behind on afraid or warmly</h5>
                 </div>
                 <div class="secondary-feature">
@@ -419,7 +503,7 @@
         </div>
       </section>
 
-      <section class="pt-xl-5  pb-xl-5">
+      <section class="pt-md-5 pb-md-4 pt-xl-5 pb-xl-5">
         <div class="pb-xl-2">
           <div class="container">
             <div class="row">
@@ -438,43 +522,42 @@
           </div>
         </div>
         <div class="">
-            <div class="swiper mySwiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="secondary-feature testomonial-container">
-                    <div class="row">
-                      <div class="col-xl-8 ">
-                        <p class="p-4">
-                          Wise busy past both park when an ye no. Nay likely her
-                          length sooner thrown sex lively income. The expense
-                          windows . Blessing welcomed ladyship.
-                        </p>
-                        <p class="p-4">- Mike Taylor, Web Designer</p>
-                      </div>
-                      <div class="col-xl-4">
-                        <div>
-                          <img src="./assets/images/testo1.png" alt="" />
-                        </div>
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="secondary-feature testomonial-container">
+                  <div class="row">
+                    <div class="col-xl-8 col-md-8">
+                      <p class="p-2">
+                        Wise busy past both park when an ye no. Nay likely her
+                        length sooner thrown sex lively income. The expense
+                        windows . Blessing welcomed ladyship.
+                      </p>
+                      <p class="p-4">- Mike Taylor, Web Designer</p>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                      <div>
+                        <img src="./assets/images/testo1.png" alt="" />
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide">
-                  <div class="secondary-feature testomonial-container">
-                    <div class="row">
-                      <div class=" col-xl-8">
-                        <p class="p-4">
-                          Wise busy past both park when an ye no. Nay likely her
-                          length sooner thrown sex lively income. The expense
-                          windows . Blessing welcomed ladyship.
-                        </p>
-                        <p class="p-4">- Mike Taylor, Web Designer</p>
-                      </div>
-                      <div class="col-xl-4">
-                        <div>
-                          <img src="./assets/images/testo1.png" alt="" />
-                        </div>
+              <div class="swiper-slide">
+                <div class="secondary-feature testomonial-container">
+                  <div class="row">
+                    <div class="col-xl-8 col-md-8">
+                      <p class="p-4">
+                        Wise busy past both park when an ye no. Nay likely her
+                        length sooner thrown sex lively income. The expense
+                        windows . Blessing welcomed ladyship.
+                      </p>
+                      <p class="p-4">- Mike Taylor, Web Designer</p>
+                    </div>
+                    <div class="col-xl-4 col-md-4">
+                      <div>
+                        <img src="./assets/images/testo1.png" alt="" />
                       </div>
                     </div>
                   </div>
@@ -482,19 +565,22 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
 
       <section class="theme3">
         <div class="container">
           <div class="row reviews">
-            <div class="col col-xl-2 right-bar">
-              <p class="pt-xl-5 pb-xl-5">
+            <div class="col col-xl-2 col-md-2 right-bar">
+              <p class="pt-xl-5 pb-xl-5 pt-md-5 pb-md-5">
                 We speak with our powerfull statistics
               </p>
             </div>
-            <div class="col col-xl-10 pt-xl-5 pb-xl-5">
+            <div
+              class="col col-xl-10 col-md-10 pt-xl-5 pb-xl-5 pb-md-5 pt-md-5"
+            >
               <div class="row">
-                <div class="col col-xl-4 review-box">
+                <div class="col col-xl-4 col-md-4 review-box">
                   <div>
                     <h2>1M+</h2>
                     <span>
@@ -504,7 +590,7 @@
                   </div>
                 </div>
 
-                <div class="col col-xl-4 review-box">
+                <div class="col col-xl-4 col-md-4 review-box">
                   <div>
                     <h2>30k+</h2>
                     <span>
@@ -513,7 +599,7 @@
                     >
                   </div>
                 </div>
-                <div class="col col-xl-4 review-box">
+                <div class="col col-xl-4 col-md-4 review-box">
                   <div>
                     <h2>$252M</h2>
                     <span><i class="fa-solid fa-star"></i>Transactions</span>
@@ -527,12 +613,12 @@
 
       <section>
         <div class="container">
-          <div class="pt-xl-5 pb-xl-5">
+          <div class="pt-xl-5 pb-xl-5 pt-md-5 pb-md-5">
             <div class="row">
-              <div class=" col ">
+              <div class="col-md-12">
                 <h2 class="secondary-headline">Recent Blogs</h2>
               </div>
-              <div class="col mt-xl-4">
+              <div class="col-xl-12 col-md-12 mt-xl-4 mt-md-3">
                 <div class="row">
                   <div class="col-xl-8">
                     <div class="blog-box">
@@ -546,16 +632,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-4">
-                    <div class="h-100">
+                  <div class="col-xl-4 col-md-12">
+                    <div class="h-100 w-100">
                       <img
                         src="./assets/images/blog1.png"
                         alt=""
-                        class="h-100"
+                        class="h-100 w-100"
                       />
                     </div>
                   </div>
-                  <div class="swiper mySwiper1 mt-xl-4">
+                  <div class="swiper mySwiper1 mt-xl-4 mt-md-4">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <div class="blog-box">
@@ -632,10 +718,10 @@
 
       <section>
         <div class="container">
-          <div class="row pb-xl-5">
-            <h2 class="secondary-headline col">Fequently asked questions</h2>
-            <div class=" mt-xl-4">
-              <div class="col col-xl-8 pr-xl-3">
+          <div class="row pb-xl-5 pb-md-5">
+            <h2 class="secondary-headline col">Frequently asked questions</h2>
+            <div class="row mt-xl-4 mt-md-4">
+              <div class="col col-xl-8">
                 <div class="accordion-content">
                   <header>
                     <span class="accordion-content-title">
@@ -702,7 +788,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-xl-4">
+              <div class="col col-xl-4 mt-md-4 mt-xl-0">
                 <div class="primary-feature question-box">
                   <div class="text-center msg-box">
                     <i class="fa-solid fa-message"></i>
@@ -724,7 +810,7 @@
 
       <section>
         <div class="container">
-          <div class="banner-box">
+          <div class="banner-box mb-md-5">
             <div class="text-center">
               <h2>Discover a better way to manage spendings</h2>
               <div class="pt-5">
@@ -739,44 +825,52 @@
 
       <footer>
         <div class="container">
-          <div class="row pt-xl-5 pb-xl-5">
-            <div class="col-xl-3">
+          <div class="row pt-xl-5 pb-xl-5 pb-md-4">
+            <div class="col-xl-3 col-md-6">
               <div>
                 <h5 class="logo">AR Shakir</h5>
                 <p class="pr-xl-3 pt-xl-2">
                   Finance helps companies manage payments easily.
                 </p>
+                <div class="social-media">
+                  <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
               </div>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-md-3">
               <h5>Company</h5>
               <ul class="pt-xl-2">
                 <li>
                   <a href="">About Us</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="">Careers</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="">Blog</a>
                 </li>
                 <li>
-                  <a href="">About Us</a>
+                  <a href="">Pricing </a>
                 </li>
               </ul>
             </div>
-            <div class="footer-col">
+            <div class="footer-col col-md-3">
               <h5>Resources</h5>
               <ul class="pt-xl-2">
                 <li><a href="">Proposal Template</a></li>
-                <li><a href="">Proposal Template</a></li>
+                <li><a href="">Invoice Template</a></li>
 
-                <li><a href="">Proposal Template</a></li>
+                <li><a href="">Tutorial Template</a></li>
 
-                <li><a href="">Proposal Template</a></li>
+                <li><a href="">How to write a contact</a></li>
               </ul>
             </div>
-            <div class="col-xl-4 newsletter-wrapper">
+            <div class="col-xl-4 col-md-12 newsletter-wrapper">
               <h5>Join Our Newsletter</h5>
               <div class="pt-xl-2 d-flex subscribe-input">
                 <div class="w-100">
@@ -796,11 +890,17 @@
                 management.
               </p>
             </div>
+            <div class="col-xl-12 mt-xl-3">
+              <div class="copyright text-center">
+                <p>Copyright @ AR Shakir 2022. All Rights Reserved.</p>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/toggleNav.js"></script>
     <script src="scripts/swiper.js"></script>
     <script src="scripts/accordion.js"></script>
   </body>
