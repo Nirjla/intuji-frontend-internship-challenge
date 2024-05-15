@@ -9346,7 +9346,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
-  padding-left: 15px;
 }
 @media (min-width: 576px) {
   .container {
@@ -9733,6 +9732,27 @@ body {
   background-color: #3734A9;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .logo {
   font-weight: 700;
   font-size: 20px;
@@ -9946,6 +9966,13 @@ nav a {
   font-weight: 700;
 }
 
+.feature-img img {
+  width: unset;
+  height: unset;
+  -o-object-fit: unset;
+     object-fit: unset;
+}
+
 .why-bg {
   padding: 2rem;
   background-image: url("/src/assets/images/why_choose.png");
@@ -10139,6 +10166,24 @@ nav a {
   line-height: 60px;
 }
 
+.testomonial-container p:nth-child(1) {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.testomonial-container p:nth-child(2) {
+  font-weight: 600;
+  font-size: 16px;
+}
+.testomonial-container img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .banner-box {
   background-color: #3734a9;
   padding: 3rem;
@@ -10199,4 +10244,54 @@ footer p {
   color: #181433;
   opacity: 50%;
   padding-top: 1rem;
+}
+
+.accordion-content {
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #dbe4e9;
+  overflow: hidden;
+  transition: all 0.1s linear;
+}
+.accordion-content:not(:first-child) {
+  margin: 10px 0;
+}
+.accordion-content i {
+  font-size: 18px;
+}
+
+.accordion-content.is-open {
+  padding-bottom: 10px;
+  transition: all 0.1s linear;
+}
+
+.accordion-content header {
+  display: flex;
+  min-height: 50px;
+  padding: 22px 22px;
+  font-size: 22px;
+  line-height: 22px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+
+.accordion-content.is-open header {
+  min-height: 35px;
+}
+
+.accordion-content-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.accordion-content-description {
+  height: 0;
+  font-size: 16px;
+  color: #000000;
+  line-height: 31px;
+  font-weight: 400;
+  padding: 0 22px;
 }/*# sourceMappingURL=main.css.map */
